@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import {useUsersFacade} from "@user-manager/user-data";
-import {UserInfo} from "../components/user-info";
-import {Users} from "../components/users-list";
+import { useUsersFacade } from '@user-manager/user-data';
+import { UserInfo } from '../components/user-info';
+import { Users } from '../components/users-list';
 
 /**
  * UsersVM provides:
@@ -12,13 +12,12 @@ import {Users} from "../components/users-list";
  */
 
 export const UsersPage = () => {
-  const [{users, active}, selectUser, updateUser] = useUsersFacade();
+    const [{ users, active }, selectUser, updateUser] = useUsersFacade();
 
-  return (
-    <section className="users-container">
-      <Users users={users} onSelect={selectUser} />
-      <UserInfo active={active} onSave={updateUser} />
-    </section>
-  );
-}
-
+    return (
+        <section className="users-container">
+            <Users users={users} onSelect={selectUser} />
+            <UserInfo active={active} onSave={updateUser} />
+        </section>
+    );
+};
