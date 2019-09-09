@@ -1,0 +1,21 @@
+{
+  "npmScope": "user-manager",
+  "implicitDependencies": {
+    "workspace.json": "*",
+    "package.json": "*",
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "user-manager": {
+      "tags": []
+    },
+    "user-manager-e2e": {
+      "tags": []
+    },
+    "user-data": {
+      "tags": []
+    }
+  }
+}
